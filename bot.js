@@ -98,16 +98,16 @@ client.on("message_create", async (message) => {
     // 4. Clean up temp file
     fs.unlinkSync(tmpFile);
 
-    // 5. Reply with transcript
-    const replyText = `${REPLY_PREFIX}${transcript}${REPLY_SUFFIX}`;
-    await message.reply(replyText);
-    console.log(`  ✅ Replied with transcript (${transcript.length} chars)`);
+    // // 5. Reply with transcript
+    // const replyText = `${REPLY_PREFIX}${transcript}${REPLY_SUFFIX}`;
+    // await message.reply(replyText);
+    // console.log(`  ✅ Replied with transcript (${transcript.length} chars)`);
+
+    // 5. Print transcript to terminal (no reply sent)
+    console.log(`\n📝 Transcript: ${transcript}\n`);
 
   } catch (err) {
     console.error("  ❌ Error:", err.message);
-
-    // // 5. Print transcript to terminal (no reply sent)
-    // console.log(`\n📝 Transcript: ${transcript}\n`);
 
     // Give a friendly error reply so the user knows something went wrong
     await message.reply(
