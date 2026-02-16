@@ -180,9 +180,9 @@ pm2 stop all
 
 ---
 
-## ⚠️ Important Notes
+## Notes
 
-- This tool uses **whatsapp-web.js**, which automates WhatsApp Web. This is against WhatsApp's Terms of Service for commercial use. Use it for **personal productivity only**.
+- This tool is built using **whatsapp-web.js**, which is intended for **individual use and personal projects**. Please keep usage non-commercial to stay aligned with standard automated web guidelines.
 - Your messages are processed **entirely on your machine** — no data is sent to any external server.
 - The Whisper model runs locally, so transcription quality depends on your computer's CPU/GPU.
 
